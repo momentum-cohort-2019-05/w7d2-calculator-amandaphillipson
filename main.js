@@ -63,14 +63,19 @@ let three = document.querySelector('.three')
     display.innerText+=three.innerText
     })
 
-let subtract = document.querySelector('.subtract')
-    subtract.addEventListener('click', function (event){
-    display.innerText+=subtract.innerText
-    })
-
 let zero = document.querySelector('.zero')
     zero.addEventListener('click', function (event){
     display.innerText+=zero.innerText
+    })
+
+let add = document.querySelector('.add')
+    add.addEventListener('click', function (event){
+        display.innerText+=add.innerText
+    })
+
+let subtract = document.querySelector('.subtract')
+    subtract.addEventListener('click', function (event){
+    display.innerText+=subtract.innerText
     })
 
 let period = document.querySelector('.period')
@@ -80,10 +85,5 @@ let period = document.querySelector('.period')
 
 let equal = document.querySelector('.equal')
     equal.addEventListener('click', function (event){
-        display.innerText+=equal.innerText
-    })
-
-let add = document.querySelector('.add')
-    add.addEventListener('click', function (event){
-        display.innerText+=add.innerText
+        display.innerText = eval(display.innerText)
     })
